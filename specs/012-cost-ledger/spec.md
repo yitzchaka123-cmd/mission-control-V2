@@ -2,29 +2,31 @@
 
 **Feature Branch**: `012-cost-ledger`
 **Created**: 2026-09-09
-**Status**: Draft — ⚠ **BLOCKED on the brain question. Do not plan this feature yet.**
+**Status**: Draft — ready to plan
 **Covers**: FEATURES §3.15, §6.5 (cost witness) · Depends on: 001, 002, 003, 005
 
-## ⚠ Why this feature is blocked
+## Why this feature exists, and what it is NOT
 
-The whole screen's *meaning* depends on an unanswered question: is inference **flat-rate**
-(riding a subscription) or **metered** (per-token API)?
+**Settled 2026-09-09: inference is flat-rate on the ChatGPT plan. No API costs.**
 
-v1 rode a ChatGPT subscription, so running the office was flat-rate — and the Cost screen
-then displayed dollar figures derived from a hidden **$3-per-million-tokens** rate. The
-audit's verdict was blunt and correct: **fiction, because the plan is flat-rate.**
+So this is a **usage** screen, not a spend screen — and the difference is the whole point.
 
-- If **flat-rate**: this is a **usage** screen. Tokens, quota and attribution are real;
-  dollars are not, and must not be shown. The Council's credit guard becomes a quota guard.
-- If **metered**: this is a **spend** screen. Dollars become real, the audit's complaint
-  resolves, and every cap, gate and guard becomes genuinely load-bearing.
-- If **both** (selectable per room): the screen must show each room in its own terms and
-  never total across the two.
+v1 displayed dollar figures derived from a hidden **$3-per-million-tokens** rate. The audit
+called it **"fiction, because the plan is flat-rate."** It was right. With flat rate locked
+in, the fix is **deletion, not correction**:
 
-**Run `/speckit-clarify` before `/speckit-plan`.** See `docs/HERMES-RIPPLE.md` §4.
+- **No dollar figures appear on this screen. Anywhere.** Not estimated, not projected, not
+  in a tooltip. A dollar sign here would be the exact Principle I violation the audit found.
+- What it **does** show: real witnessed tokens, honest per-room and per-agent attribution,
+  usage against the plan's own limits, and the plain line v1 wanted — *"covered by your
+  ChatGPT plan."*
+- **Weekly caps become usage caps.** The Run gate still refuses work at the cap; it counts
+  tokens instead of dollars.
+- **The $3/M constant is deleted** from the constants registry.
 
-Everything below that does **not** depend on the answer is specified now; everything that
-does is marked.
+The value of the screen is unchanged and arguably higher: Issac still needs to know which
+room is burning his plan quota, which agent is doing the work, and what he got for it. He
+just does not need a made-up dollar sign to know it.
 
 ## User Scenarios & Testing
 
@@ -106,14 +108,20 @@ does not merely turn red.
   never guessed.
 - **FR-008**: Demo content MUST be labelled sample throughout.
 - **FR-009**: The screen MUST be responsive to 390 px.
-- **FR-010**: [NEEDS CLARIFICATION: flat-rate vs metered. Determines whether dollars may be
-  displayed **at all**, what "Projected month" means, and whether the credit guard is a
-  quota guard or a spend guard.]
-- **FR-011**: [NEEDS CLARIFICATION: if metered, the real per-model rates and their source. A
-  hidden constant presented as measured spend is a Principle I violation and MUST NOT recur.]
-- **FR-012**: If flat-rate is chosen, the screen MUST NOT display dollar figures anywhere,
-  and MUST instead show usage against the plan's own limits, with an honest note that the
-  office is covered by the plan.
+- **FR-010**: The screen MUST NOT display a dollar figure anywhere — no estimate, no
+  projection, no tooltip. Enforced as a blocking check in the proof gate (020).
+- **FR-011**: The four stat tiles MUST be usage-based: Tokens today · Tokens this week ·
+  Busiest room · Plan usage. "Projected month" MUST be expressed in usage, not currency.
+- **FR-012**: The screen MUST carry the honest plan-rider line — the office is covered by
+  the owner's ChatGPT plan — and MUST show usage against the plan's own limits where those
+  limits are readable, or say plainly that they are not.
+- **FR-013**: Weekly caps MUST be **usage** caps. The Run gate refuses work at the cap
+  (001 FR-009); hitting a cap MUST NOT raise a money approval (008 FR-018).
+- **FR-014**: The **$3-per-million-tokens** constant MUST NOT exist in the codebase.
+- **FR-015**: Real outward spending on paid connections (Suno, Higgsfield, purchases) is
+  **money** and belongs to the Approvals ledger (008), not to this screen. If this screen
+  ever shows such spending, it MUST be clearly separated from plan usage and MUST come from
+  a real receipt, never an estimate.
 
 ### Key Entities
 
@@ -126,14 +134,17 @@ does not merely turn red.
 - **SC-001**: Every figure on the screen reconciles exactly with witnessed growth.
 - **SC-002**: Zero fabricated zeros anywhere — a room with no data says so.
 - **SC-003**: A room at its cap cannot perform paid work, proven by attempting it.
-- **SC-004**: No figure appears whose basis is not stated. The audit's "$3/M fiction" cannot recur.
+- **SC-004**: No figure appears whose basis is not stated, and **no dollar figure appears at
+  all** — the audit's "$3/M fiction" cannot recur, because the mechanism is deleted.
 - **SC-005**: A Hermes restart produces no double-count and no negative.
 
 ## Assumptions
 
 - The bridge is the only witness (002); this feature owns presentation, caps and attribution.
 - Forecasting, per-agent drill-down by hour, spike alerts and auto-pause are specced in
-  FEATURES §3.15 and scheduled after the brain question is settled.
+  FEATURES §3.15 and scheduled after Milestone 1. All are expressed in usage, not currency.
+- If the owner ever moves to a metered brain, this spec must be revisited before any dollar
+  figure is introduced — reintroducing one is a constitutional change, not a UI tweak.
 
 ## Must not repeat (from the 2026-09-02 audit)
 

@@ -11,16 +11,15 @@
 
 ---
 
-## ⚠ Gate before planning
+## ✅ No gates. All twenty are ready to plan.
 
-Two features **must not be planned** until the brain question is settled
-(`docs/HERMES-RIPPLE.md` §4 — flat-rate subscription vs metered API):
+The brain question is settled (Issac, 2026-09-09): **Hermes rides the ChatGPT plan, flat
+rate, no API costs**; the fallback is Claude on the Max plan, so both lanes are flat-rate.
+`docs/HERMES-RIPPLE.md` §4 carries the full consequences. **012** is now a usage screen with
+no dollar figures, and **008** has a concrete definition of "costs money" (real outward
+currency only — thinking is never a money action).
 
-- **012 · cost-ledger** — the entire screen's meaning depends on it
-- **008 · approvals-money-gate** — the *ask-when-it-costs-money* switch position needs a
-  definition of "costs money"
-
-Run `/speckit-clarify` on those two first. Every other feature can be planned today.
+**Nothing is blocked. There are zero `NEEDS CLARIFICATION` markers in the spec set.**
 
 ---
 
@@ -53,7 +52,7 @@ Ordered by dependency. A feature may only depend on lower numbers.
 | **009** | `memory-system` | Three shelves, five floors, doors, trash, superseding, the Mover, the Map | 2.5, 3.12, 11 |
 | **010** | `rulebook-police` | Chapters, rule life-cycle, clashes, police patrol, nightly librarian | 2.6, 3.13 |
 | **011** | `connections-vault` | Vault, repo-owned catalog, installers, lanes, keyholes, Personal wall | 2.1, 2.4, 2.11, 3.14, 8 |
-| **012** | `cost-ledger` | Cost witness, breakdowns, weekly caps, the Run gate | 3.15 |
+| **012** | `cost-ledger` | Usage witness, breakdowns, weekly usage caps, the Run gate | 3.15 |
 | **013** | `home-dashboard` | Home widgets, Activity, Notifications, Start/Wrap my day, ⌘K, while-you-were-away | 3.4, 3.18, 3.19, 3.23 |
 
 ### Tier 3 — the things that make it his
@@ -80,7 +79,7 @@ Ordered by dependency. A feature may only depend on lower numbers.
 ```
 001 hermes-runtime-contract ──┬── 002 pc-bridge ──┬── 006 maria-ai-layer
                               │                   ├── 009 memory-system
-                              │                   ├── 012 cost-ledger ⚠
+                              │                   ├── 012 cost-ledger
                               │                   ├── 016 dev-room
                               │                   └── 017 home-base
                               └── 011 connections-vault (tool gate)
@@ -89,7 +88,7 @@ Ordered by dependency. A feature may only depend on lower numbers.
                 ├── 005 office-setup-roster ──┬── 007 missions-board ── 014 council-assembly
                 │                             ├── 010 rulebook-police
                 │                             └── 015 office-3d
-                ├── 008 approvals-money-gate ⚠
+                ├── 008 approvals-money-gate
                 ├── 013 home-dashboard
                 └── 019 docs-files
 
@@ -117,14 +116,14 @@ The "nothing lost" proof. Every section of `docs/FEATURES.md` maps to at least o
 | 1.7 | Tool requests | **011**, **008** |
 | 2.1 | Vault | **011** |
 | 2.2 | Reversible vs irreversible | **008** |
-| 2.3 | The money gate | **008**, **001** (enforcement) ⚠ |
+| 2.3 | The money gate | **008**, **001** (enforcement) |
 | 2.4 | The Personal wall | **011** (connection half), **009** (memory half) |
 | 2.5 | Memory: shelves, floors, doors | **009** |
 | 2.6 | Rulebook + Police | **010** |
 | 2.7 | Assembled briefings | **001**, **006** |
 | 2.8 | One conversation everywhere | **018**, **006** |
 | 2.9 | Every room = its own agent | **001** *(dissolved — R2)* |
-| 2.10 | Brain | **001** ⚠ |
+| 2.10 | Brain | **001** — flat rate, ChatGPT plan |
 | 2.11 | Connections: the three doors | **011** *(R3)* |
 | 2.12 | Security | **004**, **002** (office lock) |
 | 2.13 | Tech stack | **003** |
@@ -143,7 +142,7 @@ The "nothing lost" proof. Every section of `docs/FEATURES.md` maps to at least o
 | 3.12 | Memory screen | **009** |
 | 3.13 | Rulebook screen | **010** |
 | 3.14 | Connections screen | **011** |
-| 3.15 | Cost | **012** ⚠ |
+| 3.15 | Cost | **012** — usage, not spend |
 | 3.16 | Docs | **019** |
 | 3.17 | Files | **019** |
 | 3.18 | Activity | **013** |
@@ -200,7 +199,7 @@ rather than restating a number.
 | Rules per chapter (soft cap) | ~20 | 010 |
 | Council credit guard | 20 messages · points every 3 · ping every 10 | 014 |
 | Cost history retention | 60 days | 012 |
-| Token cost estimate | $3 / M ⚠ *contingent on the brain question* | 012 |
+| ~~Token cost estimate~~ | ~~$3 / M~~ — **DELETED**: the plan is flat-rate, so no dollar figure exists | 012 |
 | Dev session idle | 45 min (per-project override) | 016 |
 | Nightly digest | 21:00, off by default | 016 |
 | Channel probes | 2 min configured · 30 min not | 002 |
@@ -216,8 +215,12 @@ Every feature below has a written `spec.md`. **No `plan.md` or `tasks.md` exists
 no application code exists yet** — that is deliberate, and it is what the owner asked for.
 
 **Next steps, in order:**
-1. Owner reads the specs and the ⚠ brain question.
-2. `/speckit-clarify` on **012** and **008** once the brain question is answered.
-3. `/speckit-plan` per feature, Tier 0 first.
-4. `/speckit-tasks` per feature.
-5. `/speckit-implement` — Milestone 1 only, then stop and prove.
+1. Owner reads the specs.
+2. `/speckit-plan` per feature, Tier 0 first.
+3. `/speckit-tasks` per feature.
+4. `/speckit-implement` — Milestone 1 only, then stop and prove.
+
+**Every plan must check the idea ledger.** When planning a feature, open
+[`docs/IDEA-LEDGER.md`](../docs/IDEA-LEDGER.md), find that feature's section, and account
+for every item listed against it — scheduled, or deferred with a reason. An item may move
+later; it may not quietly disappear.

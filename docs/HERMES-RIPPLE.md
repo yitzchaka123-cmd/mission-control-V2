@@ -318,39 +318,35 @@ numbers suggest.
 
 ---
 
-## 4. ⚠ The one genuinely open question: the brain and its cost model
+## 4. ✅ SETTLED — the brain and its cost model
 
-v1 §2.10: *"Primary GPT-5.5 via ChatGPT OAuth (flat cost); fallback Claude Sonnet 4.6."*
-The parenthesis is the important part. OpenClaw rode the **ChatGPT subscription**, so
-running the office was flat-rate — agents could think without metering.
+**Decision (Issac, 2026-09-09): Hermes rides the ChatGPT plan. Flat rate. No API costs.**
 
-That single fact is load-bearing across the product:
-- §3.15 **Cost screen** — the whole screen. The audit already called the $3-per-million-
-  tokens figure *"fiction because the plan is flat-rate."*
-- §3.4 Home's *Today's cost* widget; the "honest plan-rider cost widget (covered by your
-  ChatGPT plan)" idea.
-- §3.10 Council's **credit guard** at 20 messages and the "💚 What this council costs" card.
-- §2.3 the money gate's *"Ask-when-it-costs-money"* position — which needs a definition of
-  "costs money" that flat-rate makes almost vacuous and metered makes central.
-- §3.15 weekly caps per room and the Run gate that refuses paid work at the cap.
-- §7 Home Base's ChatGPT-login light and "auto-fix ChatGPT login" watchdog.
+This carries v1 §2.10 forward unchanged in substance — the subscription was always the
+cost architecture, and it stays. The consequences are now decided rather than open:
 
-**Three candidate answers, to be settled in `/speckit-clarify` before the Cost and
-Approvals specs are finalised:**
+| Area | What flat-rate means |
+|---|---|
+| **Cost screen** (§3.15) | It is a **usage** screen, not a spend screen. It shows tokens, attribution per room, and usage against the plan's own limits. **It shows no dollar figures at all.** The audit's "$3/M fiction" complaint is resolved by deletion, not by correction. |
+| **The $3-per-million constant** | **Deleted.** It described API rates the office does not pay. |
+| **Money gate** (§2.3) | *"Costs money"* means **real outward currency** — a paid connection (Suno, Higgsfield, Tripo), a purchase, a payment. **Thinking is never "costs money".** This makes the switch sharper, not vaguer: it now names a real, small set of actions. |
+| **Weekly caps** (§3.15) | Caps become **usage** caps per room, not spend caps. The Run gate still refuses work at the cap — it just counts tokens rather than dollars. |
+| **Council credit guard** (§3.10) | Stays, as a **quota and attention** guard. Twenty messages is still twenty messages of Issac's time and of plan quota. |
+| **Home's cost widget** (§3.4) | Becomes the honest **plan-rider** widget v1 wanted: "covered by your ChatGPT plan", with usage beside it. |
+| **Home Base's login light** (§7) | **Stays, and matters more.** A subscription login can expire; the "auto-fix ChatGPT login" watchdog and the 🔑 *Fix my login* banner are load-bearing, not decoration. |
+| **Fallback brain** | Claude on the Max plan — already used for the Dev Room (§9). **Both lanes stay flat-rate**, so no path silently starts metering. |
 
-- **(a) Hermes keeps riding a subscription** (ChatGPT and/or Claude Max). Preserves flat
-  cost; Cost becomes a *usage* screen, not a *spend* screen; the credit guard becomes a
-  quota guard. Depends on terms permitting programmatic use.
-- **(b) Hermes uses metered APIs.** Cost becomes real and the $3/M estimate stops being
-  fiction — the audit's complaint resolves. But the office now costs money per turn, and
-  every cap, gate and guard becomes load-bearing rather than decorative.
-- **(c) Both, selectable per room/worker** — v1 already had a per-room brain picker
-  (§3.22), so the UI exists. Most honest, most work.
+### The one risk to keep visible
 
-**This is the only question in the whole ripple that the specs cannot answer for you.**
-Everything else above is decided.
+Riding a consumer subscription programmatically depends on the provider's terms continuing
+to permit it, and subscription logins expire in ways API keys do not. v1 hit this — it is
+exactly why Home Base grew a login watchdog.
 
----
+This is **not** a reason to reconsider; it is a reason the specs must treat "the plan login
+went stale" as a normal, expected, plainly-explained state rather than an outage. That
+requirement is now written into 001, 012 and 017.
+
+**No spec is blocked any more.** All twenty can be planned.
 
 ## 5. Net effect on the rebuild
 

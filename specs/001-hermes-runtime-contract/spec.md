@@ -2,7 +2,7 @@
 
 **Feature Branch**: `001-hermes-runtime-contract`
 **Created**: 2026-09-09
-**Status**: Draft — ⚠ one blocking clarification (the brain)
+**Status**: Draft — no open questions
 **Covers**: FEATURES §2.7, §2.9, §2.10, §6.6 · Ripples R2, R6, R7, R8
 **Depends on**: nothing. This is the foundation.
 
@@ -178,9 +178,17 @@ withheld inside the Shabbos window.
   is fixed and enumerable.
 - **FR-016**: The contract MUST be versioned, and the version MUST be reported by `hello`.
 - **FR-017**: Hermes MUST run on Windows as the owner's PC is Windows-only.
-- **FR-018**: [NEEDS CLARIFICATION: which brain(s) Hermes runs, and whether inference is
-  flat-rate subscription or metered API. Load-bearing for 008 and 012 — see
-  `docs/HERMES-RIPPLE.md` §4.]
+- **FR-018**: Hermes MUST run on the owner's **ChatGPT plan** as the primary brain —
+  **flat rate, no API costs** (decided 2026-09-09). The fallback MUST be Claude on the Max
+  plan. **Both lanes are flat-rate**; Hermes MUST NOT fall back to a metered API path, and
+  an offer to "switch to API" MUST be declined.
+- **FR-019**: Hermes MUST report the plan-login state as a first-class health value, with at
+  least: signed in · expiring · signed out. A stale subscription login is a **normal,
+  expected state**, not an outage, and MUST be explained plainly (017).
+- **FR-020**: Because inference is flat-rate, Hermes MUST NOT treat thinking as a
+  money action. The money gate applies to **real outward currency only** (008 FR-015).
+- **FR-021**: Brains MUST remain selectable per room and per worker, and every selectable
+  option MUST be flat-rate. A metered option MUST NOT appear in the picker.
 
 ### Key Entities
 

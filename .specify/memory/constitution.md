@@ -132,6 +132,19 @@ goes through its own token-scoped path. Row-level security is the second belt, n
 first. Keys typed anywhere ride the locked pipe to the PC and are never echoed back.
 Personal data is walled at the **data** layer, not the login layer.
 
+### Cost and the brain
+Inference is **flat-rate**: Hermes rides the owner's ChatGPT plan, with Claude on the Max
+plan as fallback. Both lanes are flat-rate, and no path may silently start metering.
+
+It follows that **the product displays no dollar figures for agent work — anywhere.** Not
+estimated, not projected, not in a tooltip. v1 derived dollars from a hidden $3-per-million
+rate and presented them as measured spend; the audit called it fiction and was right. Usage
+is real and is shown; currency is not, and inventing it is a Principle I violation.
+
+"Costs money" therefore means **real outward currency only** — a paid service, a purchase,
+a payment. Agent thinking is never a money action. Real spending, when it happens, comes
+from a receipt and lives in the approvals ledger, never in an estimate.
+
 ### Memory
 One brain for everything. Every save is stamped `{floor, author, room/agent}` and every
 read is filtered. "Forget that" deletes every copy and lands in a 30-day trash. Facts are
@@ -178,4 +191,6 @@ the spec is wrong.
 **The standing lesson, kept verbatim from the audit:** *a gap list is worth nothing until
 someone has pressed every control in the running app and looked at the screenshots.*
 
-**Version**: 1.0.0 | **Ratified**: 2026-09-09 | **Last Amended**: 2026-09-09
+**Version**: 1.1.0 | **Ratified**: 2026-09-09 | **Last Amended**: 2026-09-09
+
+*1.1.0 — added the Cost and the brain constraint after the owner settled the flat-rate question.*

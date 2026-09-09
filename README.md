@@ -27,6 +27,7 @@ aspirational.
 | [`docs/FEATURES-V1-ORIGINAL.md`](docs/FEATURES-V1-ORIGINAL.md) | v1's untouched 1,619-line list, kept as the traceability source. |
 | [`docs/HERMES-RIPPLE.md`](docs/HERMES-RIPPLE.md) | Why the swap changes what it changes. Fourteen subsystems, thirteen numbered ripples, and the honest bill. |
 | [`docs/ASSETS-3D.md`](docs/ASSETS-3D.md) | The one thing carried over from v1: 12 rendered characters, 109 props, and the hand-built floor plan. |
+| [`docs/IDEA-LEDGER.md`](docs/IDEA-LEDGER.md) | All 62 unbuilt ideas from v1, and which spec owns each. |
 | [`specs/ROADMAP.md`](specs/ROADMAP.md) | Twenty features, their dependencies, and a coverage matrix proving zero orphaned sections. |
 | `specs/0NN-*/spec.md` | One specification per feature. |
 
@@ -36,31 +37,45 @@ aspirational.
 - ✅ Constitution ratified
 - ✅ Feature list converted to Hermes with the ripple traced
 - ✅ 3D assets inventoried and hashed
-- ✅ All twenty `spec.md` files written
+- ✅ All twenty `spec.md` files written — **zero open questions**
+- ✅ Brain settled: flat rate, ChatGPT plan
 - ⬜ `plan.md` — not started
 - ⬜ `tasks.md` — not started
 - ⬜ Application code — not started
 
-## ⚠ The one open question
+## How you know nothing was lost
 
-**Is inference flat-rate (riding a subscription) or metered (per-token API)?**
+Two checks you can run yourself, any time:
 
-v1 rode a ChatGPT subscription, so running the office cost nothing per turn. That single
-fact is load-bearing across the Cost screen, the money gate's *ask-when-it-costs-money*
-position, the Council's credit guard, weekly caps, and Home Base's login watchdog.
+```bash
+python3 scripts/verify-nothing-lost.py    # every line of the old list is still there
+python3 scripts/build-idea-ledger.py      # every unbuilt idea, and which spec owns it
+```
 
-Two features are **blocked on the answer and must not be planned until it is settled**:
-`012-cost-ledger` and `008-approvals-money-gate`. Everything else can be planned today.
+- **`verify-nothing-lost.py`** takes your original 1,619-line list, applies the exact same
+  rename, and checks every line survived. It currently reports **1,458 lines checked
+  word-for-word, 0 missing** — with the four deliberately rewritten places named and
+  explained. If anything ever goes missing, this fails and prints the line.
+- **[`docs/IDEA-LEDGER.md`](docs/IDEA-LEDGER.md)** goes further. Words surviving is not the
+  same as ideas surviving, so this pulls out all **62 items you planned but never built**
+  (the ones with no code to remind anyone they existed) and names the spec now responsible
+  for each. **Zero are unassigned.**
 
-Full reasoning: [`docs/HERMES-RIPPLE.md` §4](docs/HERMES-RIPPLE.md).
+## The brain: settled
+
+**Hermes rides your ChatGPT plan. Flat rate. No API costs.** Fallback is Claude on the Max
+plan — both lanes flat-rate, so nothing silently starts metering.
+
+What follows: Cost is a **usage** screen with **no dollar figures at all**; the $3/M
+constant is deleted; "costs money" means real outward currency only (thinking is never a
+money action); weekly caps count usage. Full consequences:
+[`docs/HERMES-RIPPLE.md` §4](docs/HERMES-RIPPLE.md).
 
 ## Next steps
 
 1. Read the constitution, the ripple analysis and the roadmap.
-2. Answer the brain question.
-3. `/speckit-clarify` on 012 and 008.
-4. `/speckit-plan` per feature, Tier 0 first.
-5. `/speckit-tasks`, then `/speckit-implement` — Milestone 1 only, then stop and prove.
+2. `/speckit-plan` per feature, Tier 0 first — checking the idea ledger for each.
+3. `/speckit-tasks`, then `/speckit-implement` — Milestone 1 only, then stop and prove.
 
 **Milestone 1** is deliberately thin: features 001 → 006. One real department, one real
 agent, one real conversation through Hermes, with the honesty machinery exercised end to

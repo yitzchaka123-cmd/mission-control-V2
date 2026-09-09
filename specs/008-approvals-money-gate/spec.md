@@ -2,7 +2,7 @@
 
 **Feature Branch**: `008-approvals-money-gate`
 **Created**: 2026-09-09
-**Status**: Draft — ⚠ blocked on the brain question before planning
+**Status**: Draft — ready to plan
 **Covers**: FEATURES §2.2, §2.3, §3.11, §1.7 · Ripple R7 · Depends on: 001, 003, 005
 
 ## Why this feature exists
@@ -15,11 +15,24 @@ enforcement on the engine was **⬜ never built**. The switches were therefore d
 Hermes Core executes the tools, so the gate finally lives in the executor (R7) — it can no
 longer be routed around.
 
-## ⚠ Blocking clarification
+## ✅ "Costs money" is now defined
 
-The **Ask-when-it-costs-money** position needs a definition of "costs money", which depends
-entirely on whether inference is flat-rate or metered (`docs/HERMES-RIPPLE.md` §4). Run
-`/speckit-clarify` before `/speckit-plan` on this feature.
+Inference is **flat-rate on the ChatGPT plan** (decided 2026-09-09), so **thinking is never
+a money action**. That makes the *Ask-when-it-costs-money* position sharper rather than
+vaguer — it names a small, real set:
+
+**A money action is one that spends real outward currency.** Specifically:
+- a paid third-party service (Suno, Higgsfield, Tripo, ElevenLabs, a metered API key the
+  owner supplied);
+- a purchase or an order (AliExpress buy, a store checkout);
+- a payment or transfer (Stripe, PayPal, an invoice being sent for payment);
+- anything that consumes a prepaid credit balance the owner topped up.
+
+**Not money actions:** agent thinking, tokens, plan usage, drafting, reading, searching, or
+any Hermes turn — however long or expensive-looking. Those are covered by the plan.
+
+This must be a **declared property of a power in the connector manifest** (011), not a
+guess made at call time.
 
 ## User Scenarios & Testing
 
@@ -125,8 +138,14 @@ him exactly what approving will do.
   from Notifications.
 - **FR-013**: The real pending count MUST feed Home and Start My Day.
 - **FR-014**: An approval MUST NEVER be granted automatically, on timeout, or by policy.
-- **FR-015**: [NEEDS CLARIFICATION: the definition of "costs money" for the
-  Ask-when-it-costs-money position — see `docs/HERMES-RIPPLE.md` §4.]
+- **FR-015**: A power MUST carry an explicit **money flag** declared in the connector
+  manifest (011). *Ask-when-it-costs-money* MUST consult that flag and nothing else.
+- **FR-016**: Agent thinking, tokens and plan usage MUST NEVER be treated as money actions.
+  A turn MUST NOT raise a money approval.
+- **FR-017**: A power with no declared money flag MUST default to **money = true** — the
+  safe direction. An undeclared power asks.
+- **FR-018**: Usage caps (012) MUST be enforced separately from the money gate. Hitting a
+  usage cap refuses work; it does not raise a money approval.
 
 ### Key Entities
 

@@ -52,10 +52,11 @@ ripples in brief:
 | **R12** | Home Base's setup wizard changes; its shell does not |
 | **R13** | Data-model renames |
 
-**⚠ One question the specs cannot answer for you** — the brain and its cost model
-(flat-rate subscription vs metered API). It is load-bearing across §2.3, §2.10, §3.4,
-§3.10, §3.15 and §7. See `docs/HERMES-RIPPLE.md` §4. Settle it before the Cost and
-Approvals specs are finalised.
+**✅ The brain question is settled** (Issac, 2026-09-09): **Hermes rides the ChatGPT plan,
+flat rate, no API costs.** Fallback is Claude on the Max plan — both lanes flat-rate. So:
+Cost is a **usage** screen with **no dollar figures**, the $3/M constant is **deleted**,
+"costs money" means **real outward currency only** (thinking is free), and Home Base's
+plan-login watchdog is load-bearing. Full consequences: `docs/HERMES-RIPPLE.md` §4.
 
 ---
 
@@ -286,7 +287,7 @@ mid-task. Selectable per room/worker: `openai/gpt-5.5`, `gpt-5.5-pro`, `gpt-5.4-
 as real `--model` / `--thinking` flags. Dev Room coding = Claude Code on the Max plan (never API
 credits; Sonnet default, Opus deliberately).
 
-> **⚠ THE ONE OPEN QUESTION.** *"GPT-5.5 via ChatGPT OAuth (flat cost)"* was a **cost architecture**, not just a model choice — riding the subscription meant agents could think without metering. It is load-bearing across the Cost screen (§3.15), Home's cost widget (§3.4), the Council credit guard (§3.10), the money gate's *ask-when-it-costs-money* position (§2.3), weekly caps, and Home Base's ChatGPT-login light (§7). Three candidates — (a) Hermes rides a subscription, (b) Hermes uses metered APIs, (c) both, selectable per room. See `docs/HERMES-RIPPLE.md` §4. **Settle this before the Cost and Approvals specs are finalised.**
+> **✅ SETTLED — flat rate, on the ChatGPT plan.** (Issac, 2026-09-09.) The subscription was always the cost architecture and it stays; the fallback is Claude on the Max plan, so **both lanes are flat-rate and no path silently starts metering**. Consequences: Cost (§3.15) is a **usage** screen showing tokens and plan usage with **no dollar figures**; the $3/M constant is **deleted**; the money gate's *ask-when-it-costs-money* position means **real outward currency only** — a paid connection, a purchase, a payment — and **thinking is never "costs money"**; weekly caps count usage; the Council guard (§3.10) is a quota-and-attention guard; Home Base's plan-login watchdog (§7) is load-bearing, because a subscription login can go stale in a way an API key does not. See `docs/HERMES-RIPPLE.md` §4.
 
 ### 2.11 Connections (the three doors)
 The UI = buttons over Hermes's OWN setup. Three doors: native Hermes connectors → MCP adapter
@@ -691,11 +692,11 @@ only on dev / `?qa=1`, the Weekly Assembly via the in-world bell.
 - **Details** drawer per row: spend (tokens + estimate or "no figure" + reason) + **What they
   delivered** (scorecard stars + last 5 done tasks).
 - Dollars = a declared estimate at **$3 per million tokens** ("estimated at API rates"; audit P1 calls
-  this fiction because the plan is flat-rate).
->
-> **⚠ This entire screen depends on the open brain question.** The audit called the $3/M figure *fiction because the plan is flat-rate* — and it was right. If Hermes rides a subscription, Cost is a **usage** screen and the credit guard is a **quota** guard. If Hermes uses metered APIs, Cost becomes real, the audit's complaint resolves, and every cap and gate becomes load-bearing rather than decorative. Do not finalise this spec before the question is settled — `docs/HERMES-RIPPLE.md` §4. Source: the bridge witnesses per-session lifetime token
+  this fiction because the plan is flat-rate). Source: the bridge witnesses per-session lifetime token
   growth per room per day (worker desks count for the room; Telegram/main = Office Management; patrol =
   Police Station; first sighting = baseline; 60-day history on the PC → cloud only on growth).
+
+> **✅ Settled — this is a usage screen, not a spend screen.** The audit called the $3/M figure *fiction because the plan is flat-rate*, and it was right. With flat rate locked in, the fix is **deletion, not correction**: no dollar figures appear anywhere on this screen. It shows real witnessed tokens, per-room attribution, and usage against the plan's own limits, with the honest plan-rider line ("covered by your ChatGPT plan"). Weekly caps become **usage** caps and the Run gate still refuses work at the cap. See `docs/HERMES-RIPPLE.md` §4.
 - Demo screen fully labelled "sample". Mobile-responsive.
 - ⬜ cost forecast ("at this rate ~₪X this month"); per-agent drill by day and hour (Issac's
   nice-to-have); spike alerts; month view; auto-pause on the PC; per-worker cost; honest plan-rider
