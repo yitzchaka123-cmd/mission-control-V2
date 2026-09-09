@@ -211,8 +211,18 @@ rather than restating a number.
 
 ## Status
 
-Every feature below has a written `spec.md`. **No `plan.md` or `tasks.md` exists yet, and
-no application code exists yet** — that is deliberate, and it is what the owner asked for.
+| | |
+|---|---|
+| `spec.md` | ✅ all twenty, zero open questions |
+| `plan.md` | ✅ **Tier 0 (001–004)** · ⬜ Tiers 1–4 |
+| `tasks.md` | ⬜ none yet |
+| application code | ⬜ none yet — deliberately |
+
+**Tier 0 planning note.** The Hermes brain adapter (001 D2/D3) is the riskiest assumption in
+the whole rebuild, so it is proven by a throwaway spike on Issac's own PC **before anything is
+built on top of it**. If the ChatGPT-plan adapter cannot be driven, the Claude Max adapter —
+already proven working on that PC since 2026-08-17 — keeps Milestone 1 unblocked. That is the
+reason the adapter interface exists on day one rather than later.
 
 **Next steps, in order:**
 1. Owner reads the specs.

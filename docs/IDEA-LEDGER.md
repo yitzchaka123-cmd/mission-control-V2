@@ -28,22 +28,7 @@
 
 - Phase I plan ⬜: a breathtaking landing FIRST → email/password/forgot sign-up → download Home Base →
 
-## → `004-front-door-accounts`  (3 items)
-
-
-**v1 §3.20 — Dev Room ✅ (14 controls) — the website side of Dexter**
-
-- the dev summary; QuickCapture can target Development. ⏭ Dexter's brain shown here.
-
-**v1 §3.22 — Department workspace (`/app/room/<name>`) ✅**
-
-- - The old scripted "live reasoning stream" was DELETED (fake). ⬜ per-worker permissions editor by
-
-**v1 §3.23 — Global overlays ✅**
-
-- it done. ⏭ Shabbos-aware banner.
-
-## → `005-office-setup-roster`  (5 items)
+## → `005-office-setup-roster`  (6 items)
 
 
 **v1 §1.5 — Business types (onboarding catalog; each furnishes its room with fitting props) ✅**
@@ -56,6 +41,10 @@
 - emotional realtime voice) ⬜.
 - - Vision ⬜: **interview-first room creation** — when asked to add a room Maria interviews first (what
 - **Guided new-business onboarding** (P2-L) ⬜. **Whole-app first-run tour** ⬜.
+
+**v1 §3.22 — Department workspace (`/app/room/<name>`) ✅**
+
+- - The old scripted "live reasoning stream" was DELETED (fake). ⬜ per-worker permissions editor by
 
 ## → `006-maria-ai-layer`  (2 items)
 
@@ -135,7 +124,7 @@
 
 - - ⬜ cost forecast ("at this rate ~₪X this month"); per-agent drill by day and hour (Issac's
 
-## → `013-home-dashboard`  (2 items)
+## → `013-home-dashboard`  (3 items)
 
 
 **v1 §3.4 — Home ✅ (24 controls)**
@@ -145,6 +134,10 @@
 **v1 §3.19 — Notifications ✅ (bell + inbox, 8 controls)**
 
 - - ⏭ precise room/deep-link metadata for connection-created notices; ⬜ urgent PWA push + quick-actions
+
+**v1 §3.23 — Global overlays ✅**
+
+- it done. ⏭ Shabbos-aware banner.
 
 ## → `014-council-assembly`  (3 items)
 
@@ -167,8 +160,12 @@
 
 - do / Doing / Done over the real Office Management tasks). ⬜ separate server-rack visuals per type
 
-## → `016-dev-room`  (3 items)
+## → `016-dev-room`  (4 items)
 
+
+**v1 §3.20 — Dev Room ✅ (14 controls) — the website side of Dexter**
+
+- the dev summary; QuickCapture can target Development. ⏭ Dexter's brain shown here.
 
 **v1 §9.1 — The idea (Issac's plan, locked 2026-08-14) 🟢 live on the PC since 2026-08-17**
 

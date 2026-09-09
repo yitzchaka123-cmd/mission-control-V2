@@ -26,7 +26,7 @@ OWNER = [
  (r'^2\.9', '001-hermes-runtime-contract'), (r'^2\.10', '001-hermes-runtime-contract'),
  (r'^2\.11', '011-connections-vault'), (r'^2\.12', '004-front-door-accounts'),
  (r'^2\.13', '003-app-shell'),
- (r'^3\.0', '003-app-shell'), (r'^3\.1$', '003-app-shell'), (r'^3\.2', '004-front-door-accounts'),
+ (r'^3\.0', '003-app-shell'), (r'^3\.1$', '003-app-shell'), (r'^3\.2$', '004-front-door-accounts'),
  (r'^3\.3', '005-office-setup-roster'), (r'^3\.4', '013-home-dashboard'),
  (r'^3\.[5-8]', '007-missions-board'), (r'^3\.9', '015-office-3d'),
  (r'^3\.10', '014-council-assembly'), (r'^3\.11', '008-approvals-money-gate'),
@@ -39,7 +39,8 @@ OWNER = [
  (r'^6\.', '002-pc-bridge'), (r'^7', '017-home-base'),
  (r'^8\.', '011-connections-vault'), (r'^9', '016-dev-room'),
  (r'^10', '018-telegram-phone'), (r'^11', '009-memory-system'),
- (r'^12\.', '004-front-door-accounts'), (r'^13', '020-proof-system'),
+ (r'^12\.1', '004-front-door-accounts'), (r'^12\.2', '003-app-shell'),
+ (r'^12\.4', '002-pc-bridge'), (r'^12\.', 'each feature owns its own'), (r'^13', '020-proof-system'),
  (r'^14\.', 'spread across all twenty'), (r'^15', 'the constitution'),
  (r'^16', 'history (orientation only)'),
 ]

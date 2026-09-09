@@ -39,7 +39,8 @@ aspirational.
 - ✅ 3D assets inventoried and hashed
 - ✅ All twenty `spec.md` files written — **zero open questions**
 - ✅ Brain settled: flat rate, ChatGPT plan
-- ⬜ `plan.md` — not started
+- ✅ `plan.md` for Tier 0 (001–004) — the four foundation features
+- ⬜ `plan.md` for Tiers 1–4
 - ⬜ `tasks.md` — not started
 - ⬜ Application code — not started
 
@@ -74,8 +75,9 @@ money action); weekly caps count usage. Full consequences:
 ## Next steps
 
 1. Read the constitution, the ripple analysis and the roadmap.
-2. `/speckit-plan` per feature, Tier 0 first — checking the idea ledger for each.
-3. `/speckit-tasks`, then `/speckit-implement` — Milestone 1 only, then stop and prove.
+2. Read the four Tier 0 plans and push back on anything that looks wrong.
+3. `/speckit-tasks` for Tier 0, then `/speckit-implement` — starting with the Phase 0 spike.
+4. `/speckit-plan` for Tiers 1–4 once Tier 0 is proven.
 
 **Milestone 1** is deliberately thin: features 001 → 006. One real department, one real
 agent, one real conversation through Hermes, with the honesty machinery exercised end to
