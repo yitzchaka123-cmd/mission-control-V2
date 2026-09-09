@@ -1,0 +1,1310 @@
+{
+ "source_repo": "yitzchaka123-cmd/Mission-Control",
+ "source_commit": "9914449da34dad56807f2ab48fff1ee78d2de808",
+ "source_prefix": "my-mission-control/public",
+ "captured": "2026-09-09",
+ "file_count": 260,
+ "total_bytes": 204571041,
+ "files": [
+  {
+   "path": "models/modern_coffee_table_01/modern_coffee_table_01.bin",
+   "bytes": 154864,
+   "sha256_16": "b8fe0d49041b879a"
+  },
+  {
+   "path": "models/modern_coffee_table_01/modern_coffee_table_01_1k.gltf",
+   "bytes": 2771,
+   "sha256_16": "a35d811da4c174d0"
+  },
+  {
+   "path": "models/modern_coffee_table_01/textures/modern_coffee_table_01_diff_1k.jpg",
+   "bytes": 410569,
+   "sha256_16": "069b89dd3ef03ddc"
+  },
+  {
+   "path": "models/modern_coffee_table_01/textures/modern_coffee_table_01_nor_gl_1k.jpg",
+   "bytes": 359134,
+   "sha256_16": "43e0d317d0f8418b"
+  },
+  {
+   "path": "models/modern_coffee_table_01/textures/modern_coffee_table_01_rough_1k.jpg",
+   "bytes": 403959,
+   "sha256_16": "8013b48b0ebb8459"
+  },
+  {
+   "path": "models/wooden_bookshelf_worn/wooden_bookshelf_worn.bin",
+   "bytes": 267964,
+   "sha256_16": "170758113b501323"
+  },
+  {
+   "path": "models/wooden_bookshelf_worn/wooden_bookshelf_worn_1k.gltf",
+   "bytes": 2849,
+   "sha256_16": "a1c5b3f1e71ae0b5"
+  },
+  {
+   "path": "models/wooden_bookshelf_worn/textures/wooden_bookshelf_worn_arm_1k.jpg",
+   "bytes": 713979,
+   "sha256_16": "41b3aca38fb55cb3"
+  },
+  {
+   "path": "models/wooden_bookshelf_worn/textures/wooden_bookshelf_worn_diff_1k.jpg",
+   "bytes": 799126,
+   "sha256_16": "970f60178decadd0"
+  },
+  {
+   "path": "models/wooden_bookshelf_worn/textures/wooden_bookshelf_worn_nor_gl_1k.jpg",
+   "bytes": 993276,
+   "sha256_16": "90ffb1b3f7bb638d"
+  },
+  {
+   "path": "models/ArmChair_01/ArmChair_01.bin",
+   "bytes": 154012,
+   "sha256_16": "42a4206ea8bb3f7c"
+  },
+  {
+   "path": "models/ArmChair_01/ArmChair_01_1k.gltf",
+   "bytes": 2643,
+   "sha256_16": "91e39d5b35f36c80"
+  },
+  {
+   "path": "models/ArmChair_01/textures/Armchair_01_arm_1k.jpg",
+   "bytes": 138327,
+   "sha256_16": "d272c68e8180f2a3"
+  },
+  {
+   "path": "models/ArmChair_01/textures/Armchair_01_diff_1k.jpg",
+   "bytes": 184246,
+   "sha256_16": "db30fc9ab61ac50c"
+  },
+  {
+   "path": "models/ArmChair_01/textures/Armchair_01_nor_gl_1k.jpg",
+   "bytes": 289916,
+   "sha256_16": "f5e4a43a12e79537"
+  },
+  {
+   "path": "models/assets/aquarium.glb",
+   "bytes": 1104956,
+   "sha256_16": "c2c1260739677070"
+  },
+  {
+   "path": "models/assets/arcade_machine.glb",
+   "bytes": 878164,
+   "sha256_16": "974a39a8818fb0f4"
+  },
+  {
+   "path": "models/assets/armchair.glb",
+   "bytes": 386504,
+   "sha256_16": "af420815392e67a5"
+  },
+  {
+   "path": "models/assets/bar_stool.glb",
+   "bytes": 786036,
+   "sha256_16": "5c714cfbddeba151"
+  },
+  {
+   "path": "models/assets/basketball_hoop.glb",
+   "bytes": 896936,
+   "sha256_16": "4e545848709e7082"
+  },
+  {
+   "path": "models/assets/bean_bag.glb",
+   "bytes": 306016,
+   "sha256_16": "b846cc3b83ab1ee8"
+  },
+  {
+   "path": "models/assets/bench_outdoor.glb",
+   "bytes": 346972,
+   "sha256_16": "6ba230749429cbfb"
+  },
+  {
+   "path": "models/assets/big_screen.glb",
+   "bytes": 265092,
+   "sha256_16": "02d3281014a21295"
+  },
+  {
+   "path": "models/assets/bollard_outdoor.glb",
+   "bytes": 668088,
+   "sha256_16": "e9faeaf93dd4d81b"
+  },
+  {
+   "path": "models/assets/bookshelf.glb",
+   "bytes": 436956,
+   "sha256_16": "eb50c163d6d67e36"
+  },
+  {
+   "path": "models/assets/bulletin_board.glb",
+   "bytes": 894192,
+   "sha256_16": "7867c7b93ea98cd2"
+  },
+  {
+   "path": "models/assets/bush.glb",
+   "bytes": 173412,
+   "sha256_16": "1153e0ff6e14ba87"
+  },
+  {
+   "path": "models/assets/camera_tripod.glb",
+   "bytes": 924892,
+   "sha256_16": "f6cece7ff85d69b9"
+  },
+  {
+   "path": "models/assets/car_blue.glb",
+   "bytes": 403040,
+   "sha256_16": "132bc701d5be35b6"
+  },
+  {
+   "path": "models/assets/car_red.glb",
+   "bytes": 500628,
+   "sha256_16": "b316174c028016f7"
+  },
+  {
+   "path": "models/assets/cash_register.glb",
+   "bytes": 925488,
+   "sha256_16": "7763a77dc1919cb6"
+  },
+  {
+   "path": "models/assets/char_baby.glb",
+   "bytes": 1462280,
+   "sha256_16": "96b0b5c40c35096c"
+  },
+  {
+   "path": "models/assets/char_devmgr.glb",
+   "bytes": 1812536,
+   "sha256_16": "4a0cfdb1534ee229"
+  },
+  {
+   "path": "models/assets/char_devmgr.hero.glb",
+   "bytes": 7585836,
+   "sha256_16": "7f9476c7cc199af3"
+  },
+  {
+   "path": "models/assets/char_devmgr.perf.glb",
+   "bytes": 1064832,
+   "sha256_16": "c09426870dc51241"
+  },
+  {
+   "path": "models/assets/char_friday.glb",
+   "bytes": 1761828,
+   "sha256_16": "8c76f1f455e2b298"
+  },
+  {
+   "path": "models/assets/char_friday.hero.glb",
+   "bytes": 7638492,
+   "sha256_16": "b372dd4af36ec1f7"
+  },
+  {
+   "path": "models/assets/char_friday.perf.glb",
+   "bytes": 1070132,
+   "sha256_16": "7935a4a39f5368a9"
+  },
+  {
+   "path": "models/assets/char_friday.rigged.glb",
+   "bytes": 2060312,
+   "sha256_16": "62734e58362987fd"
+  },
+  {
+   "path": "models/assets/char_fury.glb",
+   "bytes": 1567404,
+   "sha256_16": "50b95c1cf07c2c1c"
+  },
+  {
+   "path": "models/assets/char_fury.hero.glb",
+   "bytes": 7314264,
+   "sha256_16": "fd454c5def3d9a89"
+  },
+  {
+   "path": "models/assets/char_fury.perf.glb",
+   "bytes": 1023092,
+   "sha256_16": "56bba499a6882bd9"
+  },
+  {
+   "path": "models/assets/char_fury.rigged.glb",
+   "bytes": 1815040,
+   "sha256_16": "c8b1c5123ddc790c"
+  },
+  {
+   "path": "models/assets/char_jarvis.glb",
+   "bytes": 1322776,
+   "sha256_16": "22ca2a42a41cd0c4"
+  },
+  {
+   "path": "models/assets/char_jarvis.hero.glb",
+   "bytes": 7537740,
+   "sha256_16": "d959895323cd8ad2"
+  },
+  {
+   "path": "models/assets/char_jarvis.perf.glb",
+   "bytes": 1036836,
+   "sha256_16": "8ace5d287014b2b3"
+  },
+  {
+   "path": "models/assets/char_jarvis.rigged.glb",
+   "bytes": 1574200,
+   "sha256_16": "bac2118db37f90d7"
+  },
+  {
+   "path": "models/assets/char_loki.glb",
+   "bytes": 1441036,
+   "sha256_16": "25f7a30901d5cfc2"
+  },
+  {
+   "path": "models/assets/char_loki.hero.glb",
+   "bytes": 7224936,
+   "sha256_16": "c37b3e79354b5e56"
+  },
+  {
+   "path": "models/assets/char_loki.perf.glb",
+   "bytes": 1013776,
+   "sha256_16": "e968b7a32d3791df"
+  },
+  {
+   "path": "models/assets/char_loki.rigged.glb",
+   "bytes": 1668392,
+   "sha256_16": "eb10adac9a5feadf"
+  },
+  {
+   "path": "models/assets/char_om.glb",
+   "bytes": 1455716,
+   "sha256_16": "ddc52469e757d2ed"
+  },
+  {
+   "path": "models/assets/char_om.hero.glb",
+   "bytes": 7187908,
+   "sha256_16": "304697e6424aa1a7"
+  },
+  {
+   "path": "models/assets/char_om.perf.glb",
+   "bytes": 1010320,
+   "sha256_16": "a46e6bbc561d83e5"
+  },
+  {
+   "path": "models/assets/char_om.rigged.glb",
+   "bytes": 1702796,
+   "sha256_16": "23f44064dbafd617"
+  },
+  {
+   "path": "models/assets/char_pepper.glb",
+   "bytes": 1579676,
+   "sha256_16": "866504de5684dd4c"
+  },
+  {
+   "path": "models/assets/char_pepper.hero.glb",
+   "bytes": 7253776,
+   "sha256_16": "044ece8e6e9e2053"
+  },
+  {
+   "path": "models/assets/char_pepper.perf.glb",
+   "bytes": 1009760,
+   "sha256_16": "b663b219bab15b77"
+  },
+  {
+   "path": "models/assets/char_pepper.rigged.glb",
+   "bytes": 1799592,
+   "sha256_16": "846311fe2999dd3e"
+  },
+  {
+   "path": "models/assets/char_quill.glb",
+   "bytes": 701172,
+   "sha256_16": "d33b4b0db8d37048"
+  },
+  {
+   "path": "models/assets/char_quill.hero.glb",
+   "bytes": 1312452,
+   "sha256_16": "b2df42612c47a25c"
+  },
+  {
+   "path": "models/assets/char_quill.perf.glb",
+   "bytes": 410232,
+   "sha256_16": "8e9538d6de0639f8"
+  },
+  {
+   "path": "models/assets/char_vision.glb",
+   "bytes": 2465204,
+   "sha256_16": "0d2c3c804f12db1a"
+  },
+  {
+   "path": "models/assets/char_vision.hero.glb",
+   "bytes": 7955828,
+   "sha256_16": "405a24432101e4e8"
+  },
+  {
+   "path": "models/assets/char_vision.perf.glb",
+   "bytes": 1141568,
+   "sha256_16": "3512cb46f11e4bb5"
+  },
+  {
+   "path": "models/assets/char_vision.rigged.glb",
+   "bytes": 2826716,
+   "sha256_16": "fe8052c1d8362fcc"
+  },
+  {
+   "path": "models/assets/char_wanda.glb",
+   "bytes": 1766164,
+   "sha256_16": "c6d91491048b2672"
+  },
+  {
+   "path": "models/assets/char_wanda.hero.glb",
+   "bytes": 7622720,
+   "sha256_16": "f37cfd2680f799cf"
+  },
+  {
+   "path": "models/assets/char_wanda.perf.glb",
+   "bytes": 1067036,
+   "sha256_16": "1d484a086b70f022"
+  },
+  {
+   "path": "models/assets/char_wanda.rigged.glb",
+   "bytes": 2017920,
+   "sha256_16": "f5e8b039970acd5f"
+  },
+  {
+   "path": "models/assets/char_wife.glb",
+   "bytes": 1387740,
+   "sha256_16": "e71eed55fee0a4a3"
+  },
+  {
+   "path": "models/assets/coat_rack.glb",
+   "bytes": 933616,
+   "sha256_16": "4f73295b66fd1971"
+  },
+  {
+   "path": "models/assets/coffee_machine.glb",
+   "bytes": 360316,
+   "sha256_16": "79756bf5cd53e605"
+  },
+  {
+   "path": "models/assets/coffee_table.glb",
+   "bytes": 228620,
+   "sha256_16": "8e1a829c7adcad67"
+  },
+  {
+   "path": "models/assets/conf_table.glb",
+   "bytes": 274932,
+   "sha256_16": "12afc19c2c9a65a5"
+  },
+  {
+   "path": "models/assets/council_audience.glb",
+   "bytes": 814564,
+   "sha256_16": "57e15703ad7e6ef2"
+  },
+  {
+   "path": "models/assets/council_bench.glb",
+   "bytes": 318584,
+   "sha256_16": "579ee94729e61eff"
+  },
+  {
+   "path": "models/assets/dartboard.glb",
+   "bytes": 1034972,
+   "sha256_16": "6a202bf99f6349cf"
+  },
+  {
+   "path": "models/assets/desk.glb",
+   "bytes": 344348,
+   "sha256_16": "37535b81b0f9dbde"
+  },
+  {
+   "path": "models/assets/desk_bell.glb",
+   "bytes": 914512,
+   "sha256_16": "f0b3406f4ff1efe3"
+  },
+  {
+   "path": "models/assets/desk_calculator.glb",
+   "bytes": 958352,
+   "sha256_16": "724edfc56b4351af"
+  },
+  {
+   "path": "models/assets/desk_dev.glb",
+   "bytes": 399936,
+   "sha256_16": "8e600e48e98eab97"
+  },
+  {
+   "path": "models/assets/desk_exec_big.glb",
+   "bytes": 698240,
+   "sha256_16": "4d6413f10075221f"
+  },
+  {
+   "path": "models/assets/desk_lamp.glb",
+   "bytes": 315128,
+   "sha256_16": "093427c48ff46571"
+  },
+  {
+   "path": "models/assets/desk_lshaped.glb",
+   "bytes": 713396,
+   "sha256_16": "f2649cbc2cb98cd0"
+  },
+  {
+   "path": "models/assets/desk_mug.glb",
+   "bytes": 852672,
+   "sha256_16": "35e61467e0d8dfbd"
+  },
+  {
+   "path": "models/assets/desk_notebook.glb",
+   "bytes": 952304,
+   "sha256_16": "e40146afdca20351"
+  },
+  {
+   "path": "models/assets/desk_small.glb",
+   "bytes": 771832,
+   "sha256_16": "6eb8df3a992e6101"
+  },
+  {
+   "path": "models/assets/doormat.glb",
+   "bytes": 878880,
+   "sha256_16": "4c056bb4c9c584b3"
+  },
+  {
+   "path": "models/assets/doormat_hello.glb",
+   "bytes": 987096,
+   "sha256_16": "05f9694d83f22c3f"
+  },
+  {
+   "path": "models/assets/doormat_office.glb",
+   "bytes": 1027804,
+   "sha256_16": "6899526433b79f04"
+  },
+  {
+   "path": "models/assets/exec_chair.glb",
+   "bytes": 407804,
+   "sha256_16": "9b952d79201992e7"
+  },
+  {
+   "path": "models/assets/filing_cabinet.glb",
+   "bytes": 240900,
+   "sha256_16": "4040e3d66eb7168a"
+  },
+  {
+   "path": "models/assets/fire_hydrant.glb",
+   "bytes": 508188,
+   "sha256_16": "2eaf341274f4efa4"
+  },
+  {
+   "path": "models/assets/fireplace.glb",
+   "bytes": 920756,
+   "sha256_16": "95815ce870fabe44"
+  },
+  {
+   "path": "models/assets/floor_lamp.glb",
+   "bytes": 254580,
+   "sha256_16": "60261c05abe5b26a"
+  },
+  {
+   "path": "models/assets/foosball_table.glb",
+   "bytes": 736244,
+   "sha256_16": "d05741e591ef02e4"
+  },
+  {
+   "path": "models/assets/fridge.glb",
+   "bytes": 244156,
+   "sha256_16": "27e7c23fca9d5270"
+  },
+  {
+   "path": "models/assets/front_desk_glass.glb",
+   "bytes": 753972,
+   "sha256_16": "0b2c687c38ebd1b2"
+  },
+  {
+   "path": "models/assets/globe_desk.glb",
+   "bytes": 923260,
+   "sha256_16": "7241145e098f0585"
+  },
+  {
+   "path": "models/assets/hanging_plant.glb",
+   "bytes": 642292,
+   "sha256_16": "ef5aa3d2ae5e1769"
+  },
+  {
+   "path": "models/assets/janitor_cart.glb",
+   "bytes": 865144,
+   "sha256_16": "858e20670358841f"
+  },
+  {
+   "path": "models/assets/judge_desk.glb",
+   "bytes": 284508,
+   "sha256_16": "e8920a3378931a7f"
+  },
+  {
+   "path": "models/assets/kitchen_chair.glb",
+   "bytes": 264488,
+   "sha256_16": "e50cf9d45d5a441e"
+  },
+  {
+   "path": "models/assets/kitchen_clutter.glb",
+   "bytes": 1077476,
+   "sha256_16": "82a74784a8678236"
+  },
+  {
+   "path": "models/assets/kitchen_counter.glb",
+   "bytes": 297676,
+   "sha256_16": "087b5281cacb2d73"
+  },
+  {
+   "path": "models/assets/kitchen_table.glb",
+   "bytes": 301572,
+   "sha256_16": "415f140785e6b687"
+  },
+  {
+   "path": "models/assets/kitchenette.glb",
+   "bytes": 755716,
+   "sha256_16": "2ff7872b8b3ed301"
+  },
+  {
+   "path": "models/assets/lamppost.glb",
+   "bytes": 300060,
+   "sha256_16": "0877153f981fff40"
+  },
+  {
+   "path": "models/assets/laptop.glb",
+   "bytes": 301252,
+   "sha256_16": "5777ac41bcedb5f7"
+  },
+  {
+   "path": "models/assets/magic_8ball.glb",
+   "bytes": 845288,
+   "sha256_16": "975544a86f0b2ccc"
+  },
+  {
+   "path": "models/assets/microwave.glb",
+   "bytes": 284860,
+   "sha256_16": "f8c5a46e5a6e7e88"
+  },
+  {
+   "path": "models/assets/monitor.glb",
+   "bytes": 314808,
+   "sha256_16": "7f9365e49ea44f2d"
+  },
+  {
+   "path": "models/assets/mop_bucket.glb",
+   "bytes": 1140564,
+   "sha256_16": "b5c17a7be89c9c5c"
+  },
+  {
+   "path": "models/assets/office_chair.glb",
+   "bytes": 597112,
+   "sha256_16": "71b43b64018586a4"
+  },
+  {
+   "path": "models/assets/office_sign.glb",
+   "bytes": 240072,
+   "sha256_16": "e5f5cbad7c1d299e"
+  },
+  {
+   "path": "models/assets/parking_lot.glb",
+   "bytes": 717636,
+   "sha256_16": "99a43757136df85f"
+  },
+  {
+   "path": "models/assets/partition_cubicle.glb",
+   "bytes": 722208,
+   "sha256_16": "2618d49b72434574"
+  },
+  {
+   "path": "models/assets/pen_cup.glb",
+   "bytes": 928876,
+   "sha256_16": "dffad3c8f68652b7"
+  },
+  {
+   "path": "models/assets/pendant_light.glb",
+   "bytes": 858576,
+   "sha256_16": "7695adca48f5383a"
+  },
+  {
+   "path": "models/assets/pet_dog.glb",
+   "bytes": 3866420,
+   "sha256_16": "368d75b8c23aec9d"
+  },
+  {
+   "path": "models/assets/photo_frame.glb",
+   "bytes": 908648,
+   "sha256_16": "8d0f64f6be4beb51"
+  },
+  {
+   "path": "models/assets/ping_pong.glb",
+   "bytes": 313240,
+   "sha256_16": "fafdf743431f8503"
+  },
+  {
+   "path": "models/assets/plant_medium.glb",
+   "bytes": 949292,
+   "sha256_16": "a51ae9400a5a3ce8"
+  },
+  {
+   "path": "models/assets/plant_small.glb",
+   "bytes": 532384,
+   "sha256_16": "e2a732b727a998ca"
+  },
+  {
+   "path": "models/assets/plant_tall.glb",
+   "bytes": 435432,
+   "sha256_16": "86a93b63ec4c91a0"
+  },
+  {
+   "path": "models/assets/planter_box_outdoor.glb",
+   "bytes": 729216,
+   "sha256_16": "53c8a95c7ff3886a"
+  },
+  {
+   "path": "models/assets/planter_outdoor.glb",
+   "bytes": 661632,
+   "sha256_16": "60384f8c3ba221ac"
+  },
+  {
+   "path": "models/assets/podium.glb",
+   "bytes": 272888,
+   "sha256_16": "2b7f2653d717cb7d"
+  },
+  {
+   "path": "models/assets/poster_art.glb",
+   "bytes": 956476,
+   "sha256_16": "ecbb26ae60b50281"
+  },
+  {
+   "path": "models/assets/reception_desk.glb",
+   "bytes": 431596,
+   "sha256_16": "1c7f755326b38f02"
+  },
+  {
+   "path": "models/assets/reception_glass.glb",
+   "bytes": 693752,
+   "sha256_16": "4e802f9bc1824764"
+  },
+  {
+   "path": "models/assets/reception_plant.glb",
+   "bytes": 528616,
+   "sha256_16": "b03ef32d048641ad"
+  },
+  {
+   "path": "models/assets/recording_mic.glb",
+   "bytes": 930364,
+   "sha256_16": "1f0ed275cc5801c0"
+  },
+  {
+   "path": "models/assets/retail_shelf.glb",
+   "bytes": 959320,
+   "sha256_16": "e19609f05d8f27f6"
+  },
+  {
+   "path": "models/assets/rug_blue.glb",
+   "bytes": 1155148,
+   "sha256_16": "68a4e025cc4a0719"
+  },
+  {
+   "path": "models/assets/rug_green.glb",
+   "bytes": 1038100,
+   "sha256_16": "e0cf799c2045b6e4"
+  },
+  {
+   "path": "models/assets/rug_rectangular.glb",
+   "bytes": 868568,
+   "sha256_16": "41cbea53fff562df"
+  },
+  {
+   "path": "models/assets/rug_round.glb",
+   "bytes": 186576,
+   "sha256_16": "dadba2cecf62090d"
+  },
+  {
+   "path": "models/assets/rug_round_pattern.glb",
+   "bytes": 994212,
+   "sha256_16": "0462d1e93d6e03cd"
+  },
+  {
+   "path": "models/assets/rug_terracotta.glb",
+   "bytes": 1060800,
+   "sha256_16": "21f4249e9602cafe"
+  },
+  {
+   "path": "models/assets/server_rack.glb",
+   "bytes": 439336,
+   "sha256_16": "b9efda50f95de43b"
+  },
+  {
+   "path": "models/assets/side_table.glb",
+   "bytes": 881576,
+   "sha256_16": "d233e5a936808732"
+  },
+  {
+   "path": "models/assets/sofa.glb",
+   "bytes": 354000,
+   "sha256_16": "32e75c946ba44d14"
+  },
+  {
+   "path": "models/assets/speaker.glb",
+   "bytes": 884780,
+   "sha256_16": "a1ee6b63ea083df1"
+  },
+  {
+   "path": "models/assets/street_sign_small.glb",
+   "bytes": 689132,
+   "sha256_16": "1cb194e6c0d715fd"
+  },
+  {
+   "path": "models/assets/suggestion_box.glb",
+   "bytes": 924276,
+   "sha256_16": "49e4d9550f4cb3f6"
+  },
+  {
+   "path": "models/assets/supply_shelf.glb",
+   "bytes": 748752,
+   "sha256_16": "8087b6e0f9dbc0cb"
+  },
+  {
+   "path": "models/assets/telephone.glb",
+   "bytes": 1015732,
+   "sha256_16": "bfd4e2438b376a37"
+  },
+  {
+   "path": "models/assets/trash_bin.glb",
+   "bytes": 861708,
+   "sha256_16": "4007216bbb72e2bd"
+  },
+  {
+   "path": "models/assets/trash_bin_outdoor.glb",
+   "bytes": 747072,
+   "sha256_16": "21f049351339d068"
+  },
+  {
+   "path": "models/assets/tree_pine.glb",
+   "bytes": 406152,
+   "sha256_16": "05220424ad37aad9"
+  },
+  {
+   "path": "models/assets/tree_round.glb",
+   "bytes": 315736,
+   "sha256_16": "f88d8b0d90456b6d"
+  },
+  {
+   "path": "models/assets/trophy_shelf.glb",
+   "bytes": 864956,
+   "sha256_16": "34622c7433ed274a"
+  },
+  {
+   "path": "models/assets/tv_xbox_unit.glb",
+   "bytes": 761004,
+   "sha256_16": "e1f128ac691ebcba"
+  },
+  {
+   "path": "models/assets/vending.glb",
+   "bytes": 699728,
+   "sha256_16": "d71f3537d710f19b"
+  },
+  {
+   "path": "models/assets/video_wall.glb",
+   "bytes": 896876,
+   "sha256_16": "52f5ee816d09b26e"
+  },
+  {
+   "path": "models/assets/waiting_chair.glb",
+   "bytes": 401400,
+   "sha256_16": "1849b96fe2b75175"
+  },
+  {
+   "path": "models/assets/wall_art.glb",
+   "bytes": 220080,
+   "sha256_16": "1fa638d99b55fdf9"
+  },
+  {
+   "path": "models/assets/wall_clock.glb",
+   "bytes": 315016,
+   "sha256_16": "1e3cf6f8eb39bb99"
+  },
+  {
+   "path": "models/assets/wall_shelf.glb",
+   "bytes": 898268,
+   "sha256_16": "f5ba2b21bbb8e83b"
+  },
+  {
+   "path": "models/assets/water_cooler.glb",
+   "bytes": 366192,
+   "sha256_16": "3483bbd7ad2debaf"
+  },
+  {
+   "path": "models/assets/whiteboard.glb",
+   "bytes": 368828,
+   "sha256_16": "677d871f1a4099c9"
+  },
+  {
+   "path": "models/assets/window_blinds.glb",
+   "bytes": 887228,
+   "sha256_16": "12f81040ed993c2f"
+  },
+  {
+   "path": "models/previews/aquarium.webp",
+   "bytes": 28248,
+   "sha256_16": "13f73cdd87363286"
+  },
+  {
+   "path": "models/previews/arcade_machine.webp",
+   "bytes": 19646,
+   "sha256_16": "e217dfd9bcb515f5"
+  },
+  {
+   "path": "models/previews/bar_stool.webp",
+   "bytes": 12254,
+   "sha256_16": "a15a65bb10d19645"
+  },
+  {
+   "path": "models/previews/basketball_hoop.webp",
+   "bytes": 15006,
+   "sha256_16": "8f1a11e97efb794e"
+  },
+  {
+   "path": "models/previews/bollard_outdoor.webp",
+   "bytes": 11782,
+   "sha256_16": "89f1a585e89263e3"
+  },
+  {
+   "path": "models/previews/bulletin_board.webp",
+   "bytes": 16014,
+   "sha256_16": "78595f94496e5a81"
+  },
+  {
+   "path": "models/previews/camera_tripod.webp",
+   "bytes": 15518,
+   "sha256_16": "c1c7c6c211a83500"
+  },
+  {
+   "path": "models/previews/cash_register.webp",
+   "bytes": 21032,
+   "sha256_16": "0b49977660c5d069"
+  },
+  {
+   "path": "models/previews/char_devmgr.webp",
+   "bytes": 17334,
+   "sha256_16": "4e93e12414bf9d93"
+  },
+  {
+   "path": "models/previews/char_friday.webp",
+   "bytes": 19360,
+   "sha256_16": "44720b7fde3d371f"
+  },
+  {
+   "path": "models/previews/char_fury.webp",
+   "bytes": 16850,
+   "sha256_16": "72d0d41c117fadde"
+  },
+  {
+   "path": "models/previews/char_jarvis.webp",
+   "bytes": 14184,
+   "sha256_16": "f5c58876d4e963d3"
+  },
+  {
+   "path": "models/previews/char_loki.webp",
+   "bytes": 15512,
+   "sha256_16": "a0e4af1988730b4b"
+  },
+  {
+   "path": "models/previews/char_om.webp",
+   "bytes": 16022,
+   "sha256_16": "b539a2ed767ba7aa"
+  },
+  {
+   "path": "models/previews/char_pepper.webp",
+   "bytes": 14896,
+   "sha256_16": "e8dafb0625ae24c5"
+  },
+  {
+   "path": "models/previews/char_quill.webp",
+   "bytes": 13916,
+   "sha256_16": "fa63b3a55014d5d7"
+  },
+  {
+   "path": "models/previews/char_test.webp",
+   "bytes": 14832,
+   "sha256_16": "d67c46aed296511f"
+  },
+  {
+   "path": "models/previews/char_vision.webp",
+   "bytes": 17024,
+   "sha256_16": "04312c9ef0f524cd"
+  },
+  {
+   "path": "models/previews/char_wanda.webp",
+   "bytes": 18858,
+   "sha256_16": "bd365cd245287525"
+  },
+  {
+   "path": "models/previews/char_wife.webp",
+   "bytes": 17690,
+   "sha256_16": "563a91b57da8d736"
+  },
+  {
+   "path": "models/previews/coat_rack.webp",
+   "bytes": 11126,
+   "sha256_16": "9765f56b1a66da0d"
+  },
+  {
+   "path": "models/previews/council_audience.webp",
+   "bytes": 15878,
+   "sha256_16": "044dc5d7554a3f66"
+  },
+  {
+   "path": "models/previews/dartboard.webp",
+   "bytes": 33238,
+   "sha256_16": "c27a6d4ba30a8e7c"
+  },
+  {
+   "path": "models/previews/desk_bell.webp",
+   "bytes": 19094,
+   "sha256_16": "494e74ab6128efba"
+  },
+  {
+   "path": "models/previews/desk_calculator.webp",
+   "bytes": 25708,
+   "sha256_16": "b2225c35214380f9"
+  },
+  {
+   "path": "models/previews/desk_exec_big.webp",
+   "bytes": 14240,
+   "sha256_16": "9f7d9d06be4275af"
+  },
+  {
+   "path": "models/previews/desk_lshaped.webp",
+   "bytes": 12078,
+   "sha256_16": "d82deecc377305ce"
+  },
+  {
+   "path": "models/previews/desk_mug.webp",
+   "bytes": 14238,
+   "sha256_16": "9f9bf3d29724f576"
+  },
+  {
+   "path": "models/previews/desk_notebook.webp",
+   "bytes": 15410,
+   "sha256_16": "9d8408b8812f61dc"
+  },
+  {
+   "path": "models/previews/desk_small.webp",
+   "bytes": 18492,
+   "sha256_16": "be7a1f54a0288797"
+  },
+  {
+   "path": "models/previews/doormat.webp",
+   "bytes": 13280,
+   "sha256_16": "d490a099b7bf55e8"
+  },
+  {
+   "path": "models/previews/doormat_hello.webp",
+   "bytes": 14124,
+   "sha256_16": "1f5980fd0e452536"
+  },
+  {
+   "path": "models/previews/doormat_office.webp",
+   "bytes": 15682,
+   "sha256_16": "8ca60234f8faf229"
+  },
+  {
+   "path": "models/previews/fireplace.webp",
+   "bytes": 25452,
+   "sha256_16": "8bd8e9efe3209faa"
+  },
+  {
+   "path": "models/previews/foosball_table.webp",
+   "bytes": 20314,
+   "sha256_16": "498e53db9507dcae"
+  },
+  {
+   "path": "models/previews/front_desk_glass.webp",
+   "bytes": 17770,
+   "sha256_16": "3e9e8c958cebe6d8"
+  },
+  {
+   "path": "models/previews/globe_desk.webp",
+   "bytes": 22310,
+   "sha256_16": "0840c9dadee385e0"
+  },
+  {
+   "path": "models/previews/janitor_cart.webp",
+   "bytes": 18266,
+   "sha256_16": "cd9e0b5e39e79f12"
+  },
+  {
+   "path": "models/previews/kitchen_clutter.webp",
+   "bytes": 25046,
+   "sha256_16": "f8b14bc442fb986a"
+  },
+  {
+   "path": "models/previews/kitchenette.webp",
+   "bytes": 18696,
+   "sha256_16": "ded838e32b1056bf"
+  },
+  {
+   "path": "models/previews/magic_8ball.webp",
+   "bytes": 15628,
+   "sha256_16": "79cc0d77838044ea"
+  },
+  {
+   "path": "models/previews/mop_bucket.webp",
+   "bytes": 18658,
+   "sha256_16": "c89c12597296078e"
+  },
+  {
+   "path": "models/previews/parking_lot.webp",
+   "bytes": 8596,
+   "sha256_16": "ece9d1586c63fdf2"
+  },
+  {
+   "path": "models/previews/partition_cubicle.webp",
+   "bytes": 13802,
+   "sha256_16": "77fef0964b6bcd4d"
+  },
+  {
+   "path": "models/previews/pen_cup.webp",
+   "bytes": 12740,
+   "sha256_16": "9f84a84285322ac0"
+  },
+  {
+   "path": "models/previews/pendant_light.webp",
+   "bytes": 8404,
+   "sha256_16": "873446c4aacc8b3b"
+  },
+  {
+   "path": "models/previews/pet_dog.webp",
+   "bytes": 20526,
+   "sha256_16": "6b16e4417403ab4e"
+  },
+  {
+   "path": "models/previews/photo_frame.webp",
+   "bytes": 16040,
+   "sha256_16": "28dc55b84b725caa"
+  },
+  {
+   "path": "models/previews/plant_medium.webp",
+   "bytes": 24360,
+   "sha256_16": "5464d282b3d8f941"
+  },
+  {
+   "path": "models/previews/planter_box_outdoor.webp",
+   "bytes": 11342,
+   "sha256_16": "c2d276685fadc2b7"
+  },
+  {
+   "path": "models/previews/poster_art.webp",
+   "bytes": 16948,
+   "sha256_16": "d93750612d327682"
+  },
+  {
+   "path": "models/previews/reception_glass.webp",
+   "bytes": 14556,
+   "sha256_16": "94cb4661b5368957"
+  },
+  {
+   "path": "models/previews/recording_mic.webp",
+   "bytes": 16790,
+   "sha256_16": "9d63c9e077e2e51d"
+  },
+  {
+   "path": "models/previews/retail_shelf.webp",
+   "bytes": 28758,
+   "sha256_16": "4fcfd772bc2e9ab8"
+  },
+  {
+   "path": "models/previews/rug_blue.webp",
+   "bytes": 23926,
+   "sha256_16": "ebdf41badfdfacde"
+  },
+  {
+   "path": "models/previews/rug_green.webp",
+   "bytes": 38748,
+   "sha256_16": "581f422168f1eb88"
+  },
+  {
+   "path": "models/previews/rug_rectangular.webp",
+   "bytes": 10278,
+   "sha256_16": "b2837d0e43595772"
+  },
+  {
+   "path": "models/previews/rug_round_pattern.webp",
+   "bytes": 13480,
+   "sha256_16": "a0e8c11b85fe7a0a"
+  },
+  {
+   "path": "models/previews/rug_terracotta.webp",
+   "bytes": 42202,
+   "sha256_16": "8aafe56dfb4897d1"
+  },
+  {
+   "path": "models/previews/side_table.webp",
+   "bytes": 15110,
+   "sha256_16": "7817948f2d7759fb"
+  },
+  {
+   "path": "models/previews/speaker.webp",
+   "bytes": 26624,
+   "sha256_16": "2ecf18d22032819c"
+  },
+  {
+   "path": "models/previews/street_sign_small.webp",
+   "bytes": 10116,
+   "sha256_16": "fbfcb9438cf56e38"
+  },
+  {
+   "path": "models/previews/suggestion_box.webp",
+   "bytes": 20824,
+   "sha256_16": "baf106529650d02a"
+  },
+  {
+   "path": "models/previews/supply_shelf.webp",
+   "bytes": 23186,
+   "sha256_16": "5987a204d1d0de2c"
+  },
+  {
+   "path": "models/previews/telephone.webp",
+   "bytes": 21870,
+   "sha256_16": "8373f42169187d8c"
+  },
+  {
+   "path": "models/previews/trash_bin.webp",
+   "bytes": 12970,
+   "sha256_16": "325fbe0b9b397e5b"
+  },
+  {
+   "path": "models/previews/trash_bin_outdoor.webp",
+   "bytes": 12692,
+   "sha256_16": "7ecf187c393706df"
+  },
+  {
+   "path": "models/previews/trophy_shelf.webp",
+   "bytes": 23022,
+   "sha256_16": "0ffa053f0b4b6024"
+  },
+  {
+   "path": "models/previews/tv_xbox_unit.webp",
+   "bytes": 20570,
+   "sha256_16": "7370b215ba0246e6"
+  },
+  {
+   "path": "models/previews/video_wall.webp",
+   "bytes": 12792,
+   "sha256_16": "90e5ed828c2bb58e"
+  },
+  {
+   "path": "models/previews/wall_shelf.webp",
+   "bytes": 15694,
+   "sha256_16": "6466a41f3adfb710"
+  },
+  {
+   "path": "models/previews/window_blinds.webp",
+   "bytes": 17656,
+   "sha256_16": "246530407a905096"
+  },
+  {
+   "path": "models/potted_plant_01/potted_plant_01.bin",
+   "bytes": 5345188,
+   "sha256_16": "a8dd1f7ce75f50dc"
+  },
+  {
+   "path": "models/potted_plant_01/potted_plant_01_1k.gltf",
+   "bytes": 7969,
+   "sha256_16": "23b30294407684b0"
+  },
+  {
+   "path": "models/potted_plant_01/textures/potted_plant_01_leaves_diff_1k.jpg",
+   "bytes": 124730,
+   "sha256_16": "b73891a0a606e139"
+  },
+  {
+   "path": "models/potted_plant_01/textures/potted_plant_01_leaves_nor_gl_1k.jpg",
+   "bytes": 177105,
+   "sha256_16": "2faa756e0ee2b834"
+  },
+  {
+   "path": "models/potted_plant_01/textures/potted_plant_01_leaves_rough_1k.jpg",
+   "bytes": 91706,
+   "sha256_16": "765e3bd1bfdad39d"
+  },
+  {
+   "path": "models/potted_plant_01/textures/potted_plant_01_pot_diff_1k.jpg",
+   "bytes": 204900,
+   "sha256_16": "51c9d80e8abe585b"
+  },
+  {
+   "path": "models/potted_plant_01/textures/potted_plant_01_pot_nor_gl_1k.jpg",
+   "bytes": 200349,
+   "sha256_16": "ec02e51751e0822d"
+  },
+  {
+   "path": "models/potted_plant_01/textures/potted_plant_01_pot_rough_1k.jpg",
+   "bytes": 173192,
+   "sha256_16": "1256199fe3a88a05"
+  },
+  {
+   "path": "models/desk_lamp_arm_01/desk_lamp_arm_01.bin",
+   "bytes": 736804,
+   "sha256_16": "07f34e32abecbaa6"
+  },
+  {
+   "path": "models/desk_lamp_arm_01/desk_lamp_arm_01_1k.gltf",
+   "bytes": 4453,
+   "sha256_16": "2ac8389afc151944"
+  },
+  {
+   "path": "models/desk_lamp_arm_01/textures/desk_lamp_arm_01_arm_1k.jpg",
+   "bytes": 780379,
+   "sha256_16": "206404c79fb7dcf8"
+  },
+  {
+   "path": "models/desk_lamp_arm_01/textures/desk_lamp_arm_01_diff_1k.jpg",
+   "bytes": 702522,
+   "sha256_16": "159eb178aba3271b"
+  },
+  {
+   "path": "models/desk_lamp_arm_01/textures/desk_lamp_arm_01_nor_gl_1k.jpg",
+   "bytes": 651826,
+   "sha256_16": "feefedc3835ecef3"
+  },
+  {
+   "path": "models/Sofa_01/Sofa_01.bin",
+   "bytes": 111264,
+   "sha256_16": "c8af86de6db09a6d"
+  },
+  {
+   "path": "models/Sofa_01/Sofa_01_1k.gltf",
+   "bytes": 2636,
+   "sha256_16": "dc9d331a24fc8994"
+  },
+  {
+   "path": "models/Sofa_01/textures/Sofa_01_arm_1k.jpg",
+   "bytes": 114593,
+   "sha256_16": "fc5db69e4cf5cf9f"
+  },
+  {
+   "path": "models/Sofa_01/textures/Sofa_01_diff_1k.jpg",
+   "bytes": 134925,
+   "sha256_16": "1772047e7887a9ec"
+  },
+  {
+   "path": "models/Sofa_01/textures/Sofa_01_nor_gl_1k.jpg",
+   "bytes": 154517,
+   "sha256_16": "1d89009f9fba3b69"
+  },
+  {
+   "path": "models/cardboard_box_01/cardboard_box_01.bin",
+   "bytes": 381936,
+   "sha256_16": "7212d43b4cb56459"
+  },
+  {
+   "path": "models/cardboard_box_01/cardboard_box_01_1k.gltf",
+   "bytes": 2903,
+   "sha256_16": "6038bcc5bba5a08a"
+  },
+  {
+   "path": "models/cardboard_box_01/textures/cardboard_box_01_arm_1k.jpg",
+   "bytes": 398433,
+   "sha256_16": "5db63828d0f904c6"
+  },
+  {
+   "path": "models/cardboard_box_01/textures/cardboard_box_01_diff_1k.jpg",
+   "bytes": 567741,
+   "sha256_16": "122c7ba8c5935e28"
+  },
+  {
+   "path": "models/cardboard_box_01/textures/cardboard_box_01_nor_gl_1k.jpg",
+   "bytes": 817424,
+   "sha256_16": "d2d1f529a851966b"
+  },
+  {
+   "path": "office-layout.json",
+   "bytes": 12519,
+   "sha256_16": "f1928b135a36d175"
+  }
+ ]
+}
