@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Test output
+coverage/
+test-results/
+playwright-report/
+
+# 3D assets — fetched by scripts/fetch-3d-assets.sh, not committed
+# (see docs/ASSETS-3D.md for why)
+public/models/
+public/office-layout.json
+
+# Local Hermes state (never commit runtime state or secrets)
+hermes/.state/
+hermes/spike/out/
+
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+
+# Editors
+.vscode/
+.idea/

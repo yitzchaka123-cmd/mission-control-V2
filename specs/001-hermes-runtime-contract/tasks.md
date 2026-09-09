@@ -25,14 +25,14 @@ US1 (P1) → US2 (P1) → US4 (P1) → US3 (P2) → US5 (P3).
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-- [ ] T001 Write the Done Contract for this feature in `specs/001-hermes-runtime-contract/done-contract.md` — what will be demonstrated to Issac, and how — **written before any code**, naming what will be demonstrated to Issac and how (Constitution II)
+- [X] T001 Write the Done Contract for this feature in `specs/001-hermes-runtime-contract/done-contract.md` — what will be demonstrated to Issac, and how — **written before any code**, naming what will be demonstrated to Issac and how (Constitution II)
 **Purpose**: Get a Node/TypeScript service skeleton standing that ships to a Windows PC.
 
-- [ ] T002 Create `hermes/` package at repo root with `package.json`, `tsconfig.json`, Node 22 engine pin, per plan.md Project Structure
-- [ ] T003 [P] Configure Vitest in `hermes/vitest.config.ts` with `unit` and `contract` test projects
-- [ ] T004 [P] Configure linting and formatting in `hermes/.eslintrc.json` and `hermes/.prettierrc`
-- [ ] T005 [P] Add the vendor-coupling grep gate to `hermes/tests/architecture/no-vendor-outside-adapters.test.ts` — fails if any vendor product name appears outside `hermes/src/adapters/` (Constitution IV, spec SC-007)
-- [ ] T006 Create the shared contract types in `hermes/src/contract/types.ts` (Capability, Session, Turn, TurnEvent, Power, Job) and emit them for the web app to import
+- [X] T002 Create `hermes/` package at repo root with `package.json`, `tsconfig.json`, Node 22 engine pin, per plan.md Project Structure
+- [X] T003 [P] Configure Vitest in `hermes/vitest.config.ts` with `unit` and `contract` test projects
+- [X] T004 [P] Configure linting and formatting in `hermes/.eslintrc.json` and `hermes/.prettierrc`
+- [X] T005 [P] Add the vendor-coupling grep gate to `hermes/tests/architecture/no-vendor-outside-adapters.test.ts` — fails if any vendor product name appears outside `hermes/src/adapters/` (Constitution IV, spec SC-007)
+- [X] T006 Create the shared contract types in `hermes/src/contract/types.ts` (Capability, Session, Turn, TurnEvent, Power, Job) and emit them for the web app to import
 
 ---
 
@@ -49,7 +49,7 @@ US1 (P1) → US2 (P1) → US4 (P1) → US3 (P2) → US5 (P3).
 > T012 switches the critical path to the Claude Max adapter — already proven on that PC
 > since 2026-08-17 — and Milestone 1 continues unblocked.
 
-- [ ] T007 Write the spike harness in `hermes/spike/plan-adapter-spike.mjs` — a throwaway script that attempts one non-interactive agent turn using the owner's ChatGPT plan
+- [X] T007 Write the spike harness in `hermes/spike/plan-adapter-spike.mjs` — a throwaway script that attempts one non-interactive agent turn using the owner's ChatGPT plan
 - [ ] T008 Run T007 on Issac's PC and answer **Q1: can a first-party runner sign in with the ChatGPT plan and complete a turn without interactive browser steps each time?** Record the answer in `specs/001-hermes-runtime-contract/research.md`
 - [ ] T009 Answer **Q2: can a structured result be read (text, tool calls, completion status) rather than scraping console output?** Record verbatim sample output in `research.md`
 - [ ] T010 Answer **Q3: what does an expired plan login look like from outside, and can it be detected cleanly?** Record the observable signal in `research.md`
@@ -58,13 +58,13 @@ US1 (P1) → US2 (P1) → US4 (P1) → US3 (P2) → US5 (P3).
 
 ### Core pieces every story needs
 
-- [ ] T013 Define the `BrainAdapter` interface in `hermes/src/adapters/adapter.ts` per plan.md D2 (`id`, `login()`, `run()`, `capabilities()`)
+- [X] T013 Define the `BrainAdapter` interface in `hermes/src/adapters/adapter.ts` per plan.md D2 (`id`, `login()`, `run()`, `capabilities()`)
 - [ ] T014 Write the adapter contract test suite in `hermes/tests/contract/brain-adapter.test.ts` — the suite **every** adapter must pass, derived from T008–T011 findings
-- [ ] T015 [P] Implement the session store in `hermes/src/sessions/store.ts` — durable on disk, keyed by session key, first-use creates (plan.md D4)
-- [ ] T016 [P] Implement per-key turn serialisation in `hermes/src/sessions/queue.ts` (spec FR-014)
-- [ ] T017 Implement the HTTP server skeleton in `hermes/src/server/index.ts` — binds `127.0.0.1` only, never a public interface
+- [X] T015 [P] Implement the session store in `hermes/src/sessions/store.ts` — durable on disk, keyed by session key, first-use creates (plan.md D4)
+- [X] T016 [P] Implement per-key turn serialisation in `hermes/src/sessions/queue.ts` (spec FR-014)
+- [X] T017 Implement the HTTP server skeleton in `hermes/src/server/index.ts` — binds `127.0.0.1` only, never a public interface
 - [ ] T018 [P] Implement the DPAPI write-only secret store in `hermes/src/secrets/store.ts` — no read-back path exists in the API surface (spec FR-005, plan.md D7)
-- [ ] T019 [P] Implement structured logging in `hermes/src/log.ts` with secret redaction **at the source**, not at display
+- [X] T019 [P] Implement structured logging in `hermes/src/log.ts` with secret redaction **at the source**, not at display
 
 **Checkpoint**: Foundation ready — the spike is answered and signed off, and user stories can begin.
 
@@ -170,7 +170,7 @@ US1 (P1) → US2 (P1) → US4 (P1) → US3 (P2) → US5 (P3).
 
 ### Implementation for User Story 3
 
-- [ ] T059 [P] [US3] Implement session-key parsing and validation in `hermes/src/sessions/keys.ts` for the four shapes (`hermes:main`, `hermes:room:<slug>`, `hermes:room:<slug>:w:<worker>`, `hermes:police`)
+- [X] T059 [P] [US3] Implement session-key parsing and validation in `hermes/src/sessions/keys.ts` for the four shapes (`hermes:main`, `hermes:room:<slug>`, `hermes:room:<slug>:w:<worker>`, `hermes:police`)
 - [ ] T060 [US3] Implement first-use room creation in `hermes/src/sessions/store.ts` — no provisioning step (plan.md D4)
 - [ ] T061 [US3] Implement session rename/migration-free key remapping in `hermes/src/sessions/rename.ts`
 - [ ] T062 [US3] Confirm Hermes holds **no roster** — add `hermes/tests/architecture/no-roster.test.ts` asserting no agent registry exists (ripple R2, spec Assumptions)
@@ -226,7 +226,10 @@ US1 (P1) → US2 (P1) → US4 (P1) → US3 (P2) → US5 (P3).
 Phase 1 Setup (T002–T006)
         ↓
 Phase 2 Foundational (T007–T019)
-        ⚠ T007–T012 = THE SPIKE. Blocks everything. Needs Issac's PC and sign-off.
+        ⚠ T008–T012 = THE SPIKE. Needs Issac's PC and sign-off.
+          It blocks T014 (contract-test content) and T028 (the adapter), NOT the
+          brain-agnostic core (T015–T017, T019). Corrected during implementation —
+          see plan.md "Correction to this plan".
         ↓
 Phase 3 US1  ← 🎯 MVP. Everything below depends on a turn actually running.
         ↓
@@ -241,7 +244,9 @@ Phase 8 Polish
 ```
 
 **Hard blockers**:
-- T012 (spike sign-off) blocks T013 and everything after.
+- T012 (spike sign-off) blocks **T014** (its content is derived from the findings) and
+  **T028** (the adapter being validated). It does **not** block the brain-agnostic core.
+- T013 (adapter interface) may be written provisionally; the spike may amend it.
 - T013 (adapter interface) blocks T028 and T074.
 - T025–T027 (events) block T029.
 - T050 (chokepoint) blocks T051–T055.

@@ -1,0 +1,26 @@
+{
+  "name": "@mission-control/hermes",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hermes \u2014 the agent runtime seam. Mission Control talks to this and to nothing else that runs agents.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src tests",
+    "format": "prettier --write \"{src,tests}/**/*.ts\"",
+    "gate": "npm run typecheck && npm run lint && npm run test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "eslint": "^9.39.5",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.70.0",
+    "vitest": "^2.1.0"
+  }
+}

@@ -186,7 +186,7 @@ describing the contract.
 
 | Phase | What | Exit condition |
 |---|---|---|
-| **0 · Spike** | Prove the ChatGPT-plan adapter on Issac's PC (D3) | The four questions answered, in writing, with a real turn completed. **Nothing else starts until this is done.** |
+| **0 · Spike** | Prove the ChatGPT-plan adapter on Issac's PC (D3) | The four questions answered, in writing, with a real turn completed. **Blocks the adapter implementation and the contract-test content — see the correction below.** |
 | **1 · Contract** | The five verbs, sessions, the event stream | A turn runs end-to-end on `hermes:main` and streams events |
 | **2 · Honesty** | `capabilities[]`, health, probes, login state | An absent capability is declared, not failed; an expired login is a named state |
 | **3 · Gate** | The tool-dispatch chokepoint | A blocked call demonstrably has zero side effects |
@@ -194,6 +194,26 @@ describing the contract.
 | **5 · MCP** | MCP client for the memory engine | A probe passes before anything shows green |
 
 Phases 3–5 can proceed in parallel once 1 and 2 land.
+
+### ⚠ Correction to this plan (2026-09-09, during implementation)
+
+This plan originally said the spike **"blocks everything"**. That was wrong, and stating it
+plainly is cheaper than quietly working around it.
+
+The spike answers questions about **the brain**. It does not touch the session store, the
+event stream, the HTTP server, the gate or the scheduler — all of which are deliberately
+brain-agnostic. Blocking them on it would have meant sitting idle for no safety gain.
+
+What the spike genuinely blocks:
+- **the `chatgpt-plan` adapter implementation** — it is the thing being validated;
+- **the contract-test suite's content** — the tasks say it is derived from the findings.
+
+Everything else in Phase 2 may proceed. The `BrainAdapter` interface may be written
+provisionally, since the spike may amend it.
+
+**This correction is itself evidence the seam design is right.** If a bad spike result
+forced a rewrite of the session store, the abstraction would be in the wrong place. It
+doesn't, so it isn't.
 
 ---
 
